@@ -7,6 +7,7 @@ SELECT
     TO_VARCHAR(hd.date_valid_std, 'YYYY-MM') AS yyyy_mm,
     pc.city_name AS city,
     c.country AS country_desc
+    --Corrected database name
 FROM FROSTBYTE_WEATHERSOURCE.onpoint_id.history_day hd
 JOIN FROSTBYTE_WEATHERSOURCE.onpoint_id.postal_codes pc
     ON pc.postal_code = hd.postal_code
